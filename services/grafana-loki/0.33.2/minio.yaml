@@ -37,10 +37,11 @@ spec:
       # to run minio as root so the existing data in minio remains accessible.
       # https://github.com/minio/operator/blob/master/UPGRADE.md#v423---v424
       securityContext:
-        runAsUser: 0
-        runAsGroup: 0
-        runAsNonRoot: false
-        fsGroup: 0
+        runAsUser: 1000
+        runAsGroup: 1000
+        runAsNonRoot: true
+        fsGroup: 1000
+        fsGroupChangePolicy: "OnRootMismatch"
   credsSecret:
     name: grafana-loki-minio
 
