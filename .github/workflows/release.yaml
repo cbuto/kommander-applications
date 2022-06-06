@@ -1,0 +1,17 @@
+on:
+  workflow_dispatch:
+    inputs:
+      chartVersion:
+        description: 'New Kommander Chart Version'
+        required: true
+        type: string
+
+jobs:
+  release:
+    name: bump kommander versions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set new chart version
+        run: ./hack/bump-application.sh kommander 0.3.0
+      - name: Chart Version
+        run: echo ${{ github.event.inputs.environment }}
