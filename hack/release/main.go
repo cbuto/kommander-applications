@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 
-	"github.com/mesosphere/kommander-applications/hack/release/cmd"
+	"github.com/cbuto/kommander-applications/hack/release/cmd"
 )
 
 func main() {

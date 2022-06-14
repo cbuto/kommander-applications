@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/mesosphere/kommander-applications/hack/release/cmd/prerelease"
+	"github.com/cbuto/kommander-applications/hack/release/cmd/prerelease"
 )
 
 var rootCmd *cobra.Command //nolint:gochecknoglobals // Cobra commands are global.

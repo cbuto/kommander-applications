@@ -1,4 +1,4 @@
-module github.com/mesosphere/kommander-applications/hack/release
+module github.com/cbuto/kommander-applications/hack/release
 
 go 1.18
 
